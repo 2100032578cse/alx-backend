@@ -80,7 +80,8 @@ def get_timezone() -> str:
 
 @app.route('/')
 def get_index() -> str:
-    """The home/index page.
+    """
+    The home/index page.
     """
     g.time = format_datetime()
     return render_template('index.html')
